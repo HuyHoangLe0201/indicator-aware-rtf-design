@@ -93,11 +93,11 @@ Table and figure numbers are those of the revised manuscript; numbers with the p
 | Lemma 1 (Section 2.3, proof in Appendix A): stopping at the first noisy crossing adds no information beyond the path | `check_ignorable_stopping.py` (prints the ratio of E[score²] to the expected path information) |
 | Theorem 2(f) (Section 3.2): the stationarity condition of an absolute stop time against the minimiser of the risk | `check_stop_condition.py` |
 | Proposition 1 (Section 3.2), Table S18 (Section S3.5): online plug-in stopping rule against fixed rules | `sim_sequential.py BETA SIGMA_LOG` (Υ = 2·BETA + 1; the table uses `0.12 0.5`, `0.5 0.5`, `2.0 0.5`, `4.48 0.3`) |
-| Proposition 2 (Appendix A), Table S19 (Section S3.6): risk of a least-squares learner, bias and variance terms against the Monte-Carlo campaign | `risk_decomposition.py {dq\|capacity} WINDOW` (the table uses `dq 100`, `capacity 400`, `capacity 100`) |
+| Proposition A.1 (Appendix A), Table S19 (Section S3.6): risk of a least-squares learner, bias and variance terms against the Monte-Carlo campaign | `risk_decomposition.py {dq\|capacity} WINDOW` (the table uses `dq 100`, `capacity 400`, `capacity 100`) |
 | Section S3.6: choosing c from an archive of completed cells (diagnostic) | `archive_rule.py {dq\|capacity} WINDOW N_ARCHIVE` (the text uses `dq 100 20` and `capacity 400 20`) |
 | Section 5.3, Table S20 (Section S3.7): Υ of a gamma degradation process between the Wiener value 1 and the exponent q | `gamma_information.py` |
 | Theorem 2 (Section 3.1), Table S21 (Section S3.8): exact corner threshold under exact labels; local-to-global check with the shape released | `exact_threshold.py` |
-| Proposition 3 (Appendix A), Table S22 (Section S3.9): excess risk at fixed ratio of label variance to units, four learners | `learner_invariance.py` |
+| Proposition A.2 (Appendix A), Table S22 (Section S3.9): excess risk at fixed ratio of label variance to units, four learners | `learner_invariance.py` |
 | Table S16: controlled study with known Υ | `sim_synth.py` |
 | Table S8 (Section S2.5): absolute stop time on the Severson cells | `cost_batt_abs.py` |
 | Table S14 (Section S3.1), Theorem 3 (Section 4.2): classical plans scored on both objectives | `sim_classical.py` (deterministic known-shape case), `sim_wiener_plan.py R CV` (Wiener random drift; CV = 0.08, 0.15, 0.25), `wiener_plan_formula.py` (first-order variance and the constant Λ_f) |
