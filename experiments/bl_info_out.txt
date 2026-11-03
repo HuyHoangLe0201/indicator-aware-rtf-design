@@ -1,0 +1,71 @@
+<site-packages>\numpy\lib\_nanfunctions_impl.py:1215: RuntimeWarning: Mean of empty slice
+  return np.nanmean(a, axis, out=out, keepdims=keepdims)
+<site-packages>\numpy\_core\fromnumeric.py:3860: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+<site-packages>\numpy\_core\_methods.py:145: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+
+=== HUST: 77 cells, median life 1911; survivors by window {134: 77, 268: 77, 516: 77, 764: 77, 1051: 77, 1529: 61, 1911: 35, 2293: 13}
+  odds     0.10   0.08   0.05   0.03   0.01   0.02   0.11    nan
+  eta      0.42   0.42   0.42   0.42   0.42   0.42   1.00    nan
+  plateau 0.11; slope at c=1: nan (bootstrap median 7.22, 95% [-0.00, 271.37], 325 usable)
+  Lambda ablation at m=287, 77 cells, ntest=15, Var(ln T)=0.0437
+    ridge  0.01: S=0.0375 (14% off) S+K=2.2560 K=2.2186 Lambda=0.017
+    ridge  0.10: S=0.0375 (14% off) S+K=0.6251 K=0.5876 Lambda=0.064
+    ridge  0.30: S=0.0375 (14% off) S+K=0.2993 K=0.2618 Lambda=0.143
+  Lambda=0.017: corner threshold theta_b=11.26 (plateau 0.11); slope nan; P(slope >= theta_b)=34%
+  Lambda=0.143: corner threshold theta_b=23.53 (plateau 0.11); slope nan; P(slope >= theta_b)=17%
+
+=== Tongji: 99 cells, median life 369; survivors by window {26: 99, 52: 99, 100: 99, 148: 91, 203: 73, 295: 61, 369: 50, 443: 15}
+  odds     0.05   0.19   0.52   0.99   1.30   1.86   0.58    nan
+  eta      0.04   0.15   0.42   0.79   1.00   1.00   1.00    nan
+  plateau 1.24; slope at c=1: nan (bootstrap median 2.97, 95% [-0.00, 11.32], 142 usable)
+  Lambda ablation at m=55, 99 cells, ntest=20, Var(ln T)=0.1813
+    ridge  0.01: S=0.1723 (5% off) S+K=6.6449 K=6.4726 Lambda=0.027
+    ridge  0.10: S=0.1723 (5% off) S+K=2.1262 K=1.9539 Lambda=0.088
+    ridge  0.30: S=0.1723 (5% off) S+K=1.1155 K=0.9432 Lambda=0.183
+  Lambda=0.027: corner threshold theta_b=1.80 (plateau 1.24); slope nan; P(slope >= theta_b)=63%
+  Lambda=0.183: corner threshold theta_b=2.28 (plateau 1.24); slope nan; P(slope >= theta_b)=59%
+
+=== RWTH: 48 cells, median life 665; survivors by window {47: 48, 93: 48, 180: 48, 266: 48, 366: 48, 532: 47, 665: 24, 798: 0}
+  odds     0.04   0.31   0.03   0.28   0.48   1.09   1.71    nan
+  eta      0.02   0.10   0.10   0.16   0.28   0.63   1.00    nan
+  plateau 1.71; slope at c=1: nan (bootstrap median nan, 95% [nan, nan], 0 usable)
+  Lambda ablation at m=100, 48 cells, ntest=10, Var(ln T)=0.0098
+    ridge  0.01: S=0.0080 (18% off) S+K=0.2220 K=0.2140 Lambda=0.038
+    ridge  0.10: S=0.0080 (18% off) S+K=0.1049 K=0.0969 Lambda=0.083
+    ridge  0.30: S=0.0080 (18% off) S+K=0.0635 K=0.0554 Lambda=0.145
+  Lambda=0.038: corner threshold theta_b=1.60 (plateau 1.71); slope nan; P(slope >= theta_b)=nan%
+  Lambda=0.145: corner threshold theta_b=1.85 (plateau 1.71); slope nan; P(slope >= theta_b)=nan%
+
+=== Stanford: 41 cells, median life 665; survivors by window {47: 41, 93: 41, 180: 41, 266: 41, 366: 41, 532: 40, 665: 21, 798: 10}
+  odds     0.00   0.00   0.01   0.00   0.01   0.42   1.88    nan
+  eta      0.00   0.00   0.00   0.00   0.01   0.22   1.00    nan
+  plateau 1.88; slope at c=1: nan (bootstrap median 8.43, 95% [1.90, 56.66], 274 usable)
+  Lambda ablation at m=100, 41 cells, ntest=8, Var(ln T)=0.0264
+    ridge  0.01: S=0.0318 (20% off) S+K=3.2311 K=3.1994 Lambda=0.010   rejected
+    ridge  0.10: S=0.0318 (20% off) S+K=0.5610 K=0.5293 Lambda=0.060   rejected
+    ridge  0.30: S=0.0318 (20% off) S+K=0.2239 K=0.1921 Lambda=0.165   rejected
+  no setting passes the control; Lambda not measured
+
+=== XJTU: 23 cells, median life 298; survivors by window {21: 23, 42: 23, 80: 23, 119: 23, 164: 20, 238: 17, 298: 12, 358: 8}
+  odds     0.05   0.02   0.26   0.00   0.60   2.58   5.12    nan
+  eta      0.01   0.01   0.03   0.03   0.12   0.50   1.00    nan
+  plateau 5.12; slope at c=1: nan (bootstrap median nan, 95% [nan, nan], 0 usable)
+  Lambda ablation at m=45, 23 cells, ntest=8, Var(ln T)=0.1213
+    ridge  0.01: S=0.1416 (17% off) S+K=8.0226 K=7.8810 Lambda=0.018
+    ridge  0.10: S=0.1416 (17% off) S+K=2.6962 K=2.5546 Lambda=0.055
+    ridge  0.30: S=0.1416 (17% off) S+K=1.3251 K=1.1835 Lambda=0.120
+  Lambda=0.018: corner threshold theta_b=1.16 (plateau 5.12); slope nan; P(slope >= theta_b)=nan%
+  Lambda=0.120: corner threshold theta_b=1.30 (plateau 5.12); slope nan; P(slope >= theta_b)=nan%
+
+
+=== MICH: 40 cells, median life 337; survivors by window {24: 40, 47: 40, 91: 40, 135: 40, 185: 40, 270: 38, 337: 20, 404: 4}
+  odds     0.10   0.44   0.41   0.53   0.52   1.46   4.93    nan
+  eta      0.02   0.09   0.09   0.11   0.11   0.30   1.00    nan
+  plateau 4.93; slope at c=1: nan (bootstrap median 1.22, 95% [nan, nan], 1 usable)
+  Lambda ablation at m=51, 40 cells, ntest=8, Var(ln T)=0.0255
+    ridge  0.01: S=0.0345 (35% off) S+K=0.5160 K=0.4816 Lambda=0.072   rejected
+    ridge  0.10: S=0.0345 (35% off) S+K=0.1893 K=0.1549 Lambda=0.222   rejected
+    ridge  0.30: S=0.0345 (35% off) S+K=0.1291 K=0.0946 Lambda=0.364   rejected
+  no setting passes the control; Lambda not measured

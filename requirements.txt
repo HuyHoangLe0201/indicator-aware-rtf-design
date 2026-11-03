@@ -1,0 +1,9 @@
+# Versions these results were produced with. Later versions of each are expected to work;
+# the three campaign tables are seeded, so a mismatch that changed a printed number would
+# show up immediately.
+numpy==2.2.4
+scipy==1.15.2
+scikit-learn==1.6.1
+matplotlib==3.10.1
+sympy==1.13.3
+h5py>=3.10    # reading the raw Severson .mat batches (v7.3) in dq_traj.py, severson_extract.py and the channel scripts

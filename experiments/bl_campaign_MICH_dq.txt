@@ -1,0 +1,29 @@
+MICH channel dq window m=51: 40 cells, 10 held out, f=0.154, 16 splits x 8 draws
+
+N1=4 (C=4.2); corner buys 4 units; corner error 1.67 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50    8 |     2.48    1.27 |   -59.1% [-111.9, -22.5]
+ 0.65    6 |     4.80    1.33 |  -204.6% [-339.5,-101.8]
+ 0.80    5 |     1.99    1.49 |   -23.1% [ -43.4,  -3.9]
+ 1.00    4 |     1.67    1.67 |     0.0% [   0.0,   0.0]
+
+N1=6 (C=6.3); corner buys 6 units; corner error 1.33 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   11 |     2.14    1.13 |   -62.5% [ -98.3, -33.5]
+ 0.65    9 |     2.39    1.16 |   -82.9% [-115.9, -52.9]
+ 0.80    7 |     1.92    1.34 |   -46.6% [ -74.6, -22.6]
+ 1.00    6 |     1.33    1.33 |     0.0% [   0.0,   0.0]
+
+N1=10 (C=10.5); corner buys 10 units; corner error 1.17 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   19 |     1.80    1.05 |   -56.1% [ -72.7, -40.8]
+ 0.65   15 |     2.00    1.09 |   -75.3% [-107.7, -46.2]
+ 0.80   12 |     1.85    1.14 |   -61.6% [ -89.4, -35.1]
+ 1.00   10 |     1.17    1.17 |     0.0% [   0.0,   0.0]
+
+N1=12 (C=12.6); corner buys 12 units; corner error 1.14 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   23 |     1.79    1.06 |   -57.8% [ -72.2, -43.8]
+ 0.65   18 |     2.00    1.09 |   -76.6% [-103.7, -51.6]
+ 0.80   15 |     1.84    1.09 |   -62.1% [ -89.3, -37.0]
+ 1.00   12 |     1.14    1.14 |     0.0% [   0.0,   0.0]

@@ -1,0 +1,29 @@
+MICH channel capacity window m=185: 40 cells, 10 held out, f=0.154, 16 splits x 8 draws
+
+N1=4 (C=4.2); corner buys 4 units; corner error 1.31 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50    8 |     2.17    1.19 |   -71.9% [ -95.0, -51.6]
+ 0.65    6 |     2.06    1.19 |   -59.4% [ -81.5, -39.8]
+ 0.80    5 |     1.91    1.23 |   -49.2% [ -70.1, -29.9]
+ 1.00    4 |     1.31    1.31 |     0.0% [   0.0,   0.0]
+
+N1=6 (C=6.3); corner buys 6 units; corner error 1.26 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   10 |     2.18    1.19 |   -79.9% [-110.6, -54.2]
+ 0.65    9 |     2.16    1.13 |   -74.6% [-105.6, -47.3]
+ 0.80    7 |     1.89    1.09 |   -54.7% [ -79.4, -30.7]
+ 1.00    6 |     1.26    1.26 |     0.0% [   0.0,   0.0]
+
+N1=10 (C=10.5); corner buys 10 units; corner error 1.16 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   10 |     2.18    1.19 |  -103.2% [-149.1, -69.0]
+ 0.65   15 |     2.17    1.08 |   -96.3% [-138.9, -61.2]
+ 0.80   12 |     1.97    1.12 |   -80.4% [-119.0, -48.6]
+ 1.00   10 |     1.16    1.16 |     0.0% [   0.0,   0.0]
+
+N1=12 (C=12.6); corner buys 12 units; corner error 1.12 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   10 |     2.18    1.19 |  -106.4% [-136.4, -79.3]
+ 0.65   18 |     2.16    1.08 |   -97.9% [-127.2, -72.4]
+ 0.80   15 |     1.92    1.02 |   -78.7% [-109.3, -52.2]
+ 1.00   12 |     1.12    1.12 |     0.0% [   0.0,   0.0]

@@ -1,0 +1,29 @@
+Tongji channel capacity window m=203: 73 cells, 18 held out, f=0.149, 16 splits x 8 draws
+
+N1=6 (C=6.3); corner buys 6 units; corner error 1.26 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   11 |     1.22    1.11 |     2.2% [  -4.0,   8.5]
+ 0.65    9 |     1.09    1.18 |    13.3% [   8.6,  17.9]
+ 0.80    7 |     1.04    1.23 |    16.6% [  10.6,  22.4]
+ 1.00    6 |     1.26    1.26 |     0.0% [   0.0,   0.0]
+
+N1=10 (C=10.5); corner buys 10 units; corner error 1.01 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   19 |     1.25    1.09 |   -24.6% [ -33.4, -16.5]
+ 0.65   15 |     1.05    1.10 |    -4.7% [ -11.4,   2.4]
+ 0.80   12 |     0.95    1.13 |     4.9% [  -1.7,  11.3]
+ 1.00   10 |     1.01    1.01 |     0.0% [   0.0,   0.0]
+
+N1=16 (C=16.8); corner buys 16 units; corner error 0.94 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   27 |     1.27    1.07 |   -35.6% [ -41.8, -29.0]
+ 0.65   24 |     1.02    1.07 |    -9.4% [ -15.3,  -4.2]
+ 0.80   20 |     0.94    1.04 |    -0.7% [  -7.0,   5.4]
+ 1.00   16 |     0.94    0.94 |     0.0% [   0.0,   0.0]
+
+N1=24 (C=25.2); corner buys 24 units; corner error 0.88 x pool-mean error
+    c    n |  imputed  oracle | paired gain vs corner (imputed)
+ 0.50   27 |     1.27    1.07 |   -45.3% [ -52.9, -37.5]
+ 0.65   36 |     1.02    1.05 |   -17.2% [ -23.1, -10.6]
+ 0.80   30 |     0.92    0.99 |    -5.1% [ -11.5,   1.2]
+ 1.00   24 |     0.88    0.88 |     0.0% [   0.0,   0.0]

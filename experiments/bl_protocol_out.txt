@@ -1,0 +1,36 @@
+
+=== HUST: 77 cells, groups {'1': 8, '10': 8, '2': 7, '3': 8, '4': 8, '5': 7, '6': 7, '7': 8, '8': 8, '9': 8}
+  dq        m= 287  77 cells, 10 groups: error / training-mean error: random 5-fold 1.01, leave-group-out 0.97
+  capacity  m=1051  77 cells, 10 groups: error / training-mean error: random 5-fold 0.39, leave-group-out 0.40
+
+=== Tongji: 99 cells, groups {'CY25-025': 7, 'CY25-05': 36, 'CY35-05': 6, 'CY45-05': 50}
+  dq        m=  55  99 cells, 4 groups: error / training-mean error: random 5-fold 0.83, leave-group-out 1.08
+  capacity  m= 203  73 cells, 4 groups: error / training-mean error: random 5-fold 0.86, leave-group-out 1.34
+
+=== RWTH: 48 cells, groups {'all': 48}
+  dq        m= 100  48 cells: random CV 0.91; fewer than 2 groups of at least 3 cells
+  capacity  m= 366  48 cells: random CV 0.80; fewer than 2 groups of at least 3 cells
+
+=== Stanford: 41 cells, groups {'Ref': 3, 'Regular': 38}
+  dq        m= 100  41 cells, 2 groups: error / training-mean error: random 5-fold 1.15, leave-group-out 1.18
+  capacity  m= 366  41 cells, 2 groups: error / training-mean error: random 5-fold 0.80, leave-group-out 2.23
+
+=== MICH: 40 cells, groups {'pouch_NMC_25C_0-100_1-1C': 21, 'pouch_NMC_45C_0-100_1-1C': 19}
+  dq        m=  51  40 cells, 2 groups: error / training-mean error: random 5-fold 0.92, leave-group-out 3.56
+  capacity  m= 185  40 cells, 2 groups: error / training-mean error: random 5-fold 2.75, leave-group-out 3.04
+
+=== XJTU: 23 cells, groups {'2C': 8, '3C': 15}
+  dq        m=  45  23 cells, 2 groups: error / training-mean error: random 5-fold 0.94, leave-group-out 1.14
+  capacity  m= 164  20 cells, 2 groups: error / training-mean error: random 5-fold 1.43, leave-group-out 0.55
+
+=== HNEI: 14 cells, groups {'18650_NMC_LCO_25C_0-100_0.5-1.5C': 14}
+  dq        m=  38  14 cells: random CV 1.17; fewer than 2 groups of at least 3 cells
+  capacity  m= 138  14 cells: random CV 0.74; fewer than 2 groups of at least 3 cells
+
+=== SNL: 16 cells, groups {'18650_LFP_25C_0-100_0.5-3C': 4, '18650_LFP_35C_0-100_0.5-1C': 3, '18650_LFP_35C_0-100_0.5-2C': 2, '18650_NCA_25C_0-100_0.5-0.5C': 2, '18650_NCA_25C_20-80_0.5-0.5C': 4, '18650_NMC_25C_0-100_0.5-0.5C': 1}
+  dq        m= 373  11 cells, 2 groups: error / training-mean error: random 5-fold 1.08, leave-group-out 1.29
+  capacity  m=1368   9 cells, 2 groups: error / training-mean error: random 5-fold 0.94, leave-group-out 1.40
+
+=== CALCE: 13 cells, groups {'CS2': 6, 'CX2': 7}
+  dq        m=  80  13 cells, 2 groups: error / training-mean error: random 5-fold 1.19, leave-group-out 1.24
+  capacity  m= 294  13 cells, 2 groups: error / training-mean error: random 5-fold 1.30, leave-group-out 1.38
