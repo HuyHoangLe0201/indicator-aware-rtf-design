@@ -1,5 +1,5 @@
 """Exact corner threshold under exact labels (O1) and the local-to-global check with the shape released
-(Section 3.1 after Theorem 2, Section S3.8, Table S21).
+(Section 3.1 after Theorem 2, Section S3.8, Table S22).
 
 Part 1: with v(c) = 1/eta(c), Theorem 2(c) gives that the corner is the global optimum iff
         Lambda <= Lam_ex = inf_{c<1} (kappa0 + c) / ((1 - c) eta(c)).

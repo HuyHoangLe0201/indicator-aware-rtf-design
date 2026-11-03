@@ -1,4 +1,4 @@
-"""Learner invariance (Proposition 3, Appendix A; Section S3.9, Table S22).
+"""Learner invariance (Proposition A.2, Appendix A; Section S3.9, Table S23).
 
 The excess risk of a learner is taken to depend on the number of units n and the label-noise variance s2 only through
 s2 / n. The script tests this for four learners on a smooth regression problem: for pairs (n, s2) with the same ratio the

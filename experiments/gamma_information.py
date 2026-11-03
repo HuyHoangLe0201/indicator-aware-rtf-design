@@ -1,4 +1,4 @@
-"""Terminal information concentration of a gamma degradation process (Section S3.7, Table S20).
+"""Terminal information concentration of a gamma degradation process (Section S3.7, Table S21).
 
 The shape function is k (t/T)^q with the scale known; K equally spaced readings give independent Gamma(d alpha_j) increments.
 The Fisher information about ln T of the first c K increments is sum psi'(d alpha_j) (q d alpha_j)^2, and

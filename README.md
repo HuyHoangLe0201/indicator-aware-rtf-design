@@ -67,7 +67,7 @@ All are public. Put them under one directory and pass it to `set_paths.py --exte
 
 ## 5. What produces what
 
-Table and figure numbers are those of the revised manuscript; numbers with the prefix S (Tables S1 to S25, Sections S1 to S4) are those of the Supplementary Material (`Supplementary_Material_R1.pdf`), and Appendices A and B are those of the paper.
+Table and figure numbers are those of the revised manuscript; numbers with the prefix S (Tables S1 to S26, Sections S1 to S4) are those of the Supplementary Material (`Supplementary_Material_R1.pdf`), and Appendices A and B are those of the paper.
 
 | Paper element | Script |
 |---|---|
@@ -94,11 +94,12 @@ Table and figure numbers are those of the revised manuscript; numbers with the p
 | Theorem 2(f) (Section 3.2): the stationarity condition of an absolute stop time against the minimiser of the risk | `check_stop_condition.py` |
 | Proposition 1 (Section 3.2), Table S18 (Section S3.5): online plug-in stopping rule against fixed rules | `sim_sequential.py BETA SIGMA_LOG` (Υ = 2·BETA + 1; the table uses `0.12 0.5`, `0.5 0.5`, `2.0 0.5`, `4.48 0.3`) |
 | Proposition A.1 (Appendix A), Table S19 (Section S3.6): risk of a least-squares learner, bias and variance terms against the Monte-Carlo campaign | `risk_decomposition.py {dq\|capacity} WINDOW` (the table uses `dq 100`, `capacity 400`, `capacity 100`) |
+| Table S20 (Section S3.6): Proposition A.1 against the campaigns on the five further cell fleets; error with true lives of the same cells | `risk_decomposition_sets.py` (`CH=dq|capacity python risk_decomposition_sets.py SET N1`; the table uses N1 = 10 and 24 (HUST, Tongji), 8 and 14 (RWTH), 8 and 12 (Stanford, MICH)) |
 | Section S3.6: choosing c from an archive of completed cells (diagnostic) | `archive_rule.py {dq\|capacity} WINDOW N_ARCHIVE` (the text uses `dq 100 20` and `capacity 400 20`) |
-| Section 5.3, Table S20 (Section S3.7): Υ of a gamma degradation process between the Wiener value 1 and the exponent q | `gamma_information.py` |
-| Theorem 2 (Section 3.1), Table S21 (Section S3.8): exact corner threshold under exact labels; local-to-global check with the shape released | `exact_threshold.py` |
-| Proposition A.2 (Appendix A), Table S22 (Section S3.9): excess risk at fixed ratio of label variance to units, four learners | `learner_invariance.py` |
-| Proposition A.3 (Appendix A), Table S23 (Section S3.10): regret of the corner against fixed early stops, power class; bound for the front-loaded ΔQ(V) curve | `corner_regret.py` |
+| Section 5.3, Table S21 (Section S3.7): Υ of a gamma degradation process between the Wiener value 1 and the exponent q | `gamma_information.py` |
+| Theorem 2 (Section 3.1), Table S22 (Section S3.8): exact corner threshold under exact labels; local-to-global check with the shape released | `exact_threshold.py` |
+| Proposition A.2 (Appendix A), Table S23 (Section S3.9): excess risk at fixed ratio of label variance to units, four learners | `learner_invariance.py` |
+| Proposition A.3 (Appendix A), Table S24 (Section S3.10): regret of the corner against fixed early stops, power class; bound for the front-loaded ΔQ(V) curve | `corner_regret.py` |
 | Table S16: controlled study with known Υ | `sim_synth.py` |
 | Table S8 (Section S2.5): absolute stop time on the Severson cells | `cost_batt_abs.py` |
 | Table S14 (Section S3.1), Theorem 3 (Section 4.2): classical plans scored on both objectives | `sim_classical.py` (deterministic known-shape case), `sim_wiener_plan.py R CV` (Wiener random drift; CV = 0.08, 0.15, 0.25), `wiener_plan_formula.py` (first-order variance and the constant Λ_f) |

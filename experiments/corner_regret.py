@@ -1,4 +1,4 @@
-"""Regret of the corner and of fixed early stops against the best stop (Proposition A.3, Section S3.10, Table S23).
+"""Regret of the corner and of fixed early stops against the best stop (Proposition A.3, Section S3.10, Table S24).
 
 Model: G(c) = (kappa0 + c) (Lambda + 1 / eta(c)), eta(c) = c^s (power class, s = Upsilon >= 1, so eta <= c).
 Regret of a stop c at s = G(c) / min_c' G(c').
