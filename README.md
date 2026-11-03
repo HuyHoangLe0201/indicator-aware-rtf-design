@@ -95,7 +95,10 @@ Table and figure numbers are those of the revised manuscript; numbers with the p
 | Proposition 1 (Section 3.2), Table S18 (Section S3.5): online plug-in stopping rule against fixed rules | `sim_sequential.py BETA SIGMA_LOG` (Υ = 2·BETA + 1; the table uses `0.12 0.5`, `0.5 0.5`, `2.0 0.5`, `4.48 0.3`) |
 | Proposition A.1 (Appendix A), Table S19 (Section S3.6): risk of a least-squares learner, bias and variance terms against the Monte-Carlo campaign | `risk_decomposition.py {dq\|capacity} WINDOW` (the table uses `dq 100`, `capacity 400`, `capacity 100`) |
 | Table S20 (Section S3.6): Proposition A.1 against the campaigns on the five further cell fleets; error with true lives of the same cells | `risk_decomposition_sets.py` (`CH=dq|capacity python risk_decomposition_sets.py SET N1`; the table uses N1 = 10 and 24 (HUST, Tongji), 8 and 14 (RWTH), 8 and 12 (Stanford, MICH)) |
-| Section S3.6: choosing c from an archive of completed cells (diagnostic) | `archive_rule.py {dq\|capacity} WINDOW N_ARCHIVE` (the text uses `dq 100 20` and `capacity 400 20`) |
+| Section S3.6: choosing c from an archive of completed cells (prospective rule) | `archive_rule.py {dq\|capacity} WINDOW N_ARCHIVE` (the text uses `dq 100 20` and `capacity 400 20`) |
+| Section S3.6: the same rule on the five further cell fleets | `CH=dq\|capacity python archive_rule_sets.py SET N1` (larger budget of each fleet: HUST, Tongji 24; RWTH 14; Stanford, MICH 12) |
+| Window sensitivity of the capacity campaigns ($m=100$, $50$; Supplementary Material, campaign sizes) | `python capacity_window.py capacity {100\|50}` |
+| Section S3.11 (Proposition A.4): size and power of the verdict rule | `type1_rule.py` |
 | Section 5.3, Table S21 (Section S3.7): Υ of a gamma degradation process between the Wiener value 1 and the exponent q | `gamma_information.py` |
 | Theorem 2 (Section 3.1), Table S22 (Section S3.8): exact corner threshold under exact labels; local-to-global check with the shape released | `exact_threshold.py` |
 | Proposition A.2 (Appendix A), Table S23 (Section S3.9): excess risk at fixed ratio of label variance to units, four learners | `learner_invariance.py` |
