@@ -67,7 +67,7 @@ All are public. Put them under one directory and pass it to `set_paths.py --exte
 
 ## 5. What produces what
 
-Table and figure numbers are those of the revised manuscript; numbers with the prefix S (Tables S1 to S22, Sections S1 to S4) are those of the Supplementary Material (`Supplementary_Material_R1.pdf`), and Appendices A and B are those of the paper.
+Table and figure numbers are those of the revised manuscript; numbers with the prefix S (Tables S1 to S23, Sections S1 to S4) are those of the Supplementary Material (`Supplementary_Material_R1.pdf`), and Appendices A and B are those of the paper.
 
 | Paper element | Script |
 |---|---|
@@ -96,6 +96,7 @@ Table and figure numbers are those of the revised manuscript; numbers with the p
 | Proposition 2 (Appendix A), Table S19 (Section S3.6): risk of a least-squares learner, bias and variance terms against the Monte-Carlo campaign | `risk_decomposition.py {dq\|capacity} WINDOW` (the table uses `dq 100`, `capacity 400`, `capacity 100`) |
 | Section S3.6: choosing c from an archive of completed cells (diagnostic) | `archive_rule.py {dq\|capacity} WINDOW N_ARCHIVE` (the text uses `dq 100 20` and `capacity 400 20`) |
 | Section 5.3, Table S20 (Section S3.7): Υ of a gamma degradation process between the Wiener value 1 and the exponent q | `gamma_information.py` |
+| Theorem 2 (Section 3.1), Table S21 (Section S3.8): exact corner threshold under exact labels; local-to-global check with the shape released | `exact_threshold.py` |
 | Table S16: controlled study with known Υ | `sim_synth.py` |
 | Table S8 (Section S2.5): absolute stop time on the Severson cells | `cost_batt_abs.py` |
 | Table S14 (Section S3.1), Theorem 3 (Section 4.2): classical plans scored on both objectives | `sim_classical.py` (deterministic known-shape case), `sim_wiener_plan.py R CV` (Wiener random drift; CV = 0.08, 0.15, 0.25), `wiener_plan_formula.py` (first-order variance and the constant Λ_f) |
