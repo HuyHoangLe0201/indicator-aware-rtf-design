@@ -24,3 +24,14 @@ for lam in (0.241, 0.92):
     for s in (1.0, 1.22, 2.0, 3.0, 5.0, 9.96, 20.0):
         print('   %6.2f %9.3f %9.2f %9.2f' % (s, regret(1.0, s, lam), regret(0.65, s, lam), regret(0.5, s, lam)))
     print('   largest corner regret over s in [1, 60]: %.3f' % max(regret(1.0, s, lam) for s in np.linspace(1, 60, 300)))
+
+# Part (iii): front-loaded curve, Delta Q(V) of Section S1.5 (eta <= m c)
+d = np.load('dqv_info_curve.npz')
+for name, eta in (('point estimate', d['eta']), ('upper limit', d['eta_hi'])):
+    ok = d['c'] <= 1
+    m = max(1.0, float(np.max(eta[ok] / d['c'][ok])))
+    out = []
+    for lam in (0.241, 0.92):
+        b = (1 + K0) * (1 + lam) / (np.sqrt(K0 * lam) + m**-0.5)**2 if lam >= K0 / m else 1.0
+        out.append('Lambda %.3f: %.2f' % (lam, b))
+    print('Delta Q(V), %s: m = %.2f, corner regret bound  %s' % (name, m, ';  '.join(out)))
